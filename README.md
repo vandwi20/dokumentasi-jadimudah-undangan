@@ -83,19 +83,30 @@ Form ini digunakan untuk mengunggah file gambar seperti foto sampul dan galeri.
   ]
 }
 ```
+# 📄 Contoh Format Pengisian Form Tipe Textarea dalam JSON
+
+Dokumen ini berisi contoh struktur JSON untuk form yang menggunakan **textarea** sebagai input, cocok digunakan untuk isian teks panjang seperti ucapan, doa, atau deskripsi tambahan.
 
 ---
 
-## 📌 Keterangan
+## ✏️ Contoh Form Tipe Textarea
 
-| Property     | Deskripsi                                                |
-|--------------|----------------------------------------------------------|
-| `name`       | Label yang ditampilkan di form                           |
-| `param`      | Nama parameter yang digunakan di backend                 |
-| `type`       | Jenis input (`text` atau `file`)                         |
-| `placeholder`| Teks petunjuk (khusus untuk input `text`)               |
-| `value`      | Nilai awal yang akan diisi ke dalam input                |
-
----
-
-> 💡 Anda bisa mengembangkan struktur ini untuk data lainnya seperti pengantin wanita, lokasi acara, video gallery, dll.
+```json
+{
+  "Ucapan dan Doa": [
+    {
+      "name": "Ucapan atau Doa",
+      "param": "ucapan_doa",
+      "type": "textarea",
+      "placeholder": "Tuliskan ucapan atau doa Anda untuk kedua mempelai...",
+      "value": "Selamat menempuh hidup baru! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah."
+    },
+    {
+      "name": "Pesan untuk Tuan Rumah",
+      "param": "pesan_tuan_rumah",
+      "type": "textarea",
+      "placeholder": "Berikan pesan untuk tuan rumah atau panitia...",
+      "value": ""
+    }
+  ]
+}
