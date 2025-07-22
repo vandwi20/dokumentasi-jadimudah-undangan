@@ -110,3 +110,37 @@ Dokumen ini berisi contoh struktur JSON untuk form yang menggunakan **textarea**
     }
   ]
 }
+
+
+# 📄 Contoh Format Pengisian Form Tipe Checkbox dalam JSON
+
+Checkbox digunakan untuk input **opsional boolean** (ya/tidak, aktif/nonaktif). Biasanya digunakan untuk mengaktifkan fitur tertentu atau memilih opsi.
+
+---
+
+## ☑️ Contoh Form Tipe Checkbox
+
+```json
+{
+  "Pengaturan Fitur": [
+    {
+      "name": "Pakai Fitur Gift?",
+      "param": "fitur_gift",
+      "type": "checkbox",
+      "value": true
+    },
+    {
+      "name": "Tampilkan Musik?",
+      "param": "fitur_musik",
+      "type": "checkbox",
+      "value": false
+    },
+    {
+      "name": "Aktifkan Komentar Tamu?",
+      "param": "fitur_komentar",
+      "type": "checkbox",
+      "value": true
+    }
+  ]
+}
+
