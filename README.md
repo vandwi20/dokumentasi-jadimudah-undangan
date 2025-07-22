@@ -110,7 +110,7 @@ Dokumen ini berisi contoh struktur JSON untuk form yang menggunakan **textarea**
     }
   ]
 }
-
+```
 
 # 📄 Contoh Format Pengisian Form Tipe Checkbox dalam JSON
 
@@ -143,4 +143,3 @@ Checkbox digunakan untuk input **opsional boolean** (ya/tidak, aktif/nonaktif). 
     }
   ]
 }
-
