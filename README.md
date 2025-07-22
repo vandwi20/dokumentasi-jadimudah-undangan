@@ -143,3 +143,45 @@ Checkbox digunakan untuk input **opsional boolean** (ya/tidak, aktif/nonaktif). 
     }
   ]
 }
+
+```
+
+
+
+# 📄 Contoh Format Pengisian Form Tipe Select (Dropdown) dalam JSON
+
+Tipe `select` digunakan untuk memilih **satu opsi dari beberapa pilihan**. Cocok untuk data seperti pilihan tema, jenis kelamin, bank, dsb.
+
+---
+
+## 🔽 Contoh Form Tipe Select
+
+```json
+{
+  "Pengaturan Tema dan Bank": [
+    {
+      "name": "Pilih Tema Undangan",
+      "param": "tema_undangan",
+      "type": "select",
+      "options": [
+        { "label": "Elegan", "value": "elegan" },
+        { "label": "Klasik", "value": "klasik" },
+        { "label": "Modern", "value": "modern" }
+      ],
+      "value": "elegan"
+    },
+    {
+      "name": "Bank Penerima",
+      "param": "bank_tujuan",
+      "type": "select",
+      "options": [
+        { "label": "BCA", "value": "bca" },
+        { "label": "BNI", "value": "bni" },
+        { "label": "Mandiri", "value": "mandiri" },
+        { "label": "BRI", "value": "bri" }
+      ],
+      "value": "bni"
+    }
+  ]
+}
+```
